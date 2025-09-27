@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Curriculum Learning meets Policy Optimization for LLM Reasoning.">
+  <meta name="keywords" content="Large Language Models, LLM Reasoning, Curriculum Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLPO: Curriculum Learning meets Policy Optimization for LLM Reasoning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CLPO: Curriculum Learning meets Policy Optimization for LLM Reasoning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Shijie Zhang</a><sup>1#</sup>,</span>
+            <span class="author-block">
+              <a>Guohao Sun</a><sup>2#</sup>,</span>
+            <span class="author-block">
+              <a>Kevin Zhang</a><sup>3#</sup>,
+            </span>
+            <span class="author-block">
+              <a>xiang guo</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a>Rujun Guo</a><sup>*</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>#</sup>Peking University,</span>
+            <span class="author-block"><sup>*</sup>Alibaba Group</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recently, online Reinforcement Learning with Verifiable Rewards (RLVR) has become a key paradigm for enhancing the reasoning capabilities of Large Language Models (LLMs). However, existing methods typically treat all training samples uniformly, overlook the vast differences in problem difficulty relative to the model's current capabilities. This uniform training strategy leads to inefficient exploration of problems the model has already mastered, while lacking effective guidance on the problems that are challenging its abilities the most, limiting both learning efficiency and the performance upper-bound. To address this, we propose \textbf{CLPO (Curriculum-guided Learning for Policy Optimization)}, a novel algorithm that creates a dynamic pedagogical feedback loop within the policy optimization process. The core of CLPO is to leverage the model's own rollout performance to conduct real-time difficulty assessment, thereby constructing an \textbf{Online Curriculum}. This curriculum then guides an \textbf{Adaptive Problem Restructuring} mechanism, where the model acts as its own teacher: it diversifies medium-difficulty problems to promote generalization and simplifies hard problems to make them more accessible. Our approach transforms the static training procedure into a dynamic process that co-evolves with the model's capabilities. Experiments show that CLPO achieves \textbf{state-of-the-art (SOTA)} performance across eight challenging mathematical and general reasoning benchmarks, with an average \textbf{pass@1} improvement of \textbf{6.96%} over ohter methods, demonstrating its potential for more efficiently training more capable reasoning models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- 图片位置 1 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Image 1</h2>
+        <div class="content">
+          <p>图片位置预留</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 图片位置 2 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Image 2</h2>
+        <div class="content">
+          <p>图片位置预留</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 表格位置 1 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Table 1</h2>
+        <div class="content">
+          <p>表格位置预留</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 表格位置 2 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Table 2</h2>
+        <div class="content">
+          <p>表格位置预留</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
